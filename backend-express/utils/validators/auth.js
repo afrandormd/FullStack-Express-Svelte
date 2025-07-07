@@ -2,7 +2,7 @@
 import { body } from "express-validator";
 
 // import prisma
-import prisma from "../../prisma/client";
+import prisma from "../../prisma/client/index.js";
 
 // definisikan validasi untuk register
 const validateRegister = [

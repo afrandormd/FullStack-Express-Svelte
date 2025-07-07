@@ -1,0 +1,3 @@
+name: BUAT DATA USER
+method: POST
+url: http://localhost:3000/api/register

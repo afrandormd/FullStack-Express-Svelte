@@ -5,13 +5,13 @@ import express from "express";
 import { validationResult } from "express-validator";
 
 // import prisma
-import prisma from "../prisma/client";
+import prisma from "../prisma/client/index.js";
 
 // import bcrypt
 import bcrypt from "bcryptjs";
 
 // function register
-const register = async (req, res) => {
+const RegisterController = async (req, res) => {
   // periksa hasil validasi
   const errors = validationResult(req);
 
@@ -51,4 +51,4 @@ const register = async (req, res) => {
   }
 };
 
-export default register;
+export default RegisterController;
