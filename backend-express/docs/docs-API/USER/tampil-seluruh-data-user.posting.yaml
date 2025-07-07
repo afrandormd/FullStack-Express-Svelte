@@ -1,0 +1,5 @@
+name: TAMPIL SELURUH DATA USER
+url: http://localhost:3000/api/admin/users
+headers:
+- name: Authorization
+  value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzUxODgwMjYxLCJleHRvZeg0NFpioQqKWd5wov1xgogastcVkOd48
