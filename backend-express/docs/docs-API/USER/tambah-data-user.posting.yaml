@@ -1,0 +1,17 @@
+name: TAMBAH DATA USER
+method: POST
+url: http://localhost:3000/api/admin/users
+body:
+  form_data:
+  - name: name
+    value: tirta
+  - name: email
+    value: tirta@gmail.com
+  - name: password
+    value: tirta123
+  content_type: application/x-www-form-urlencoded
+headers:
+- name: Authorization
+  value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzUxOTc5MzQ5LCJleHAiOjE3NTE5ODI5NDl9.uipFyLSHvlbUr8LHOuhJLhAf0GGvrJ5aEe083IwbBRs
+- name: content-type
+  value: application/x-www-form-urlencoded
