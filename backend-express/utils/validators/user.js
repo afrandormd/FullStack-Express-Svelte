@@ -2,10 +2,10 @@
 import { body } from "express-validator";
 
 // import prisma
-import prisma from "../../prisma/client";
+import prisma from "../../prisma/client/index.js";
 
 // Definisikan validasi untuk create user
-const validateUser = [
+export const validateUser = [
   body("name").notEmpty().withMessage("Name is required"),
   body("email")
     .notEmpty()
@@ -26,5 +26,3 @@ const validateUser = [
     .isLength({ min: 6 })
     .withMessage("Password must be at least 6 characters long"),
 ];
-
-export default validateUser;

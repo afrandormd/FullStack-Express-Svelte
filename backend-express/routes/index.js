@@ -14,10 +14,13 @@ import RegisterController from "../controllers/RegisterController.js";
 import LoginController from "../controllers/LoginController.js";
 
 // import user controller
-import UserController from "../controllers/UserController.js";
+import { createUsers, findUsers } from "../controllers/UserController.js";
 
-// import validate register
+// import validate register and login
 import { validateRegister, validateLogin } from "../utils/validators/auth.js";
+
+// import validate user
+import { validateUser } from "../utils/validators/user.js";
 
 // define route for register
 router.post("/register", validateRegister, RegisterController);
@@ -25,8 +28,11 @@ router.post("/register", validateRegister, RegisterController);
 // define route for login
 router.post("/login", validateLogin, LoginController);
 
-// define route for user
-router.get("/admin/users", verifyToken, UserController);
+// define route for get user
+router.get("/admin/users", verifyToken, findUsers);
+
+// define route for user create
+router.post("/admin/users/", verifyToken, validateUser, createUsers);
 
 // export router
 export default router;

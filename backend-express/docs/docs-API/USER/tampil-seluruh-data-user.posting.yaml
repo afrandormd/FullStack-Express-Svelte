@@ -2,4 +2,4 @@ name: TAMPIL SELURUH DATA USER
 url: http://localhost:3000/api/admin/users
 headers:
 - name: Authorization
-  value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzUxODgwMjYxLCJleHRvZeg0NFpioQqKWd5wov1xgogastcVkOd48
+  value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzUxOTc2MDU2LCJleHAiOjE3NTE5Nzk2NTZ9.2PDehHOjkv6OdOhlEssM7DpioxikNsduZrxwonHz-cU
