@@ -16,6 +16,9 @@ app.use(cors());
 // use body-parser
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// import router
+import router from "./routes/index.js";
+
 // parse application/toJSON();
 app.use(bodyParser.json());
 
@@ -26,6 +29,9 @@ const port = 3000;
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
+
+// define routes
+app.use("/api", router);
 
 // start server
 app.listen(port, () => {
