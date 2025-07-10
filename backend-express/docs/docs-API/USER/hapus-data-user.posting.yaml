@@ -1,0 +1,6 @@
+name: HAPUS DATA USER
+method: DELETE
+url: http://localhost:3000/api/admin/users/4
+headers:
+- name: Authorization
+  value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzUyMTMzMzgyLCJleHAiOjE3NTIxMzY5ODJ9.rmk2uy_SXakgJyGK1k7JYrmcfGXRHm0naR1AdhB4zHs
