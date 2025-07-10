@@ -14,7 +14,11 @@ import RegisterController from "../controllers/RegisterController.js";
 import LoginController from "../controllers/LoginController.js";
 
 // import user controller
-import { createUsers, findUsers } from "../controllers/UserController.js";
+import {
+  createUsers,
+  findUserById,
+  findUsers,
+} from "../controllers/UserController.js";
 
 // import validate register and login
 import { validateRegister, validateLogin } from "../utils/validators/auth.js";
@@ -33,6 +37,9 @@ router.get("/admin/users", verifyToken, findUsers);
 
 // define route for user create
 router.post("/admin/users/", verifyToken, validateUser, createUsers);
+
+// define route for user by id
+router.get("/admin/users/:id", verifyToken, findUserById);
 
 // export router
 export default router;
