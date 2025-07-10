@@ -16,6 +16,7 @@ import LoginController from "../controllers/LoginController.js";
 // import user controller
 import {
   createUsers,
+  deleteUser,
   findUserById,
   findUsers,
   updateUser,
@@ -44,6 +45,9 @@ router.get("/admin/users/:id", verifyToken, findUserById);
 
 // define route for user update
 router.put("/admin/users/:id", verifyToken, validateUser, updateUser);
+
+// define route for user delete
+router.delete("/admin/users/:id", verifyToken, deleteUser);
 
 // export router
 export default router;
