@@ -1,0 +1,5 @@
+name: TAMPIL DETAIL DATA USER BY ID
+url: http://localhost:3000/api/admin/users/1
+headers:
+- name: Authorization
+  value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzUyMTMxMzMyLCJleHAiOjE3NTIxMzQ5MzJ9.tgo0X_P4Ourh5aQwgDaupy1WE6N-qxObJ8hTq4I6BDU
