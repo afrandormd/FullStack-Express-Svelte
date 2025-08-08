@@ -1,6 +1,9 @@
 <script>
   // Import sidebar menu
   import SidebarMenu from "../../../components/SidebarMenu.svelte";
+
+  // export user
+  export let data;
 </script>
 
 <div class="container mt-5 mb-5">
@@ -14,7 +17,7 @@
           DASHBOARD
         </div>
         <div class="card-body">
-          Selamat Datang, <strong></strong>
+          Selamat Datang, <strong>{data.user?.name}</strong>
         </div>
       </div>
     </div>
